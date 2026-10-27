@@ -152,7 +152,7 @@ header.open .menu-btn .bars::after{top:0;transform:rotate(-45deg)}
 .free-line{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--terra);background:var(--terra-soft);padding:8px 16px;border-radius:999px}
 
 /* Concerts */
-.concerts{padding-bottom:0;background:var(--cream)}
+.concerts{background:var(--cream)}
 .community{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;margin-bottom:72px}
 .community .group{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius)}
 @media (max-width:860px){.community{grid-template-columns:1fr;gap:28px;margin-bottom:48px}}
