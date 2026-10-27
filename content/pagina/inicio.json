@@ -15,7 +15,7 @@
     "botonSecundario": "Ver precios"
   },
   "lema": {
-    "frase": "Cantar es descubrir la música que vive en ti y dejar que suene con la autenticidad de tu voz.",
+    "frase": "Cantar es descubrir la música que vive en ti y dejar que suene con la autenticidad de tu voz",
     "autora": "Inma Gomes"
   },
   "metodo": {
@@ -23,10 +23,22 @@
     "titulo": "Mi forma de trabajar",
     "texto": "¿Te apasiona el canto y quieres llevar tu talento al siguiente nivel? Déjame ayudarte. Cada clase se adapta a tus necesidades y objetivos individuales, creando un ambiente seguro y motivador.",
     "pilares": [
-      { "titulo": "Enfoque personalizado", "texto": "Partimos de un diagnóstico de tu voz para reforzar tus puntos débiles y potenciar tus fortalezas." },
-      { "titulo": "Técnica sólida", "texto": "Respiración, afinación, resonancia y proyección con Estill Voice Training, para cantar con salud vocal." },
-      { "titulo": "Ambiente seguro y motivador", "texto": "Un espacio de confianza donde equivocarse forma parte del aprendizaje y cada clase se disfruta." },
-      { "titulo": "Confianza escénica", "texto": "Trabajamos los nervios y los bloqueos con herramientas de la terapia Gestalt, y lo llevamos al escenario." }
+      {
+        "titulo": "Enfoque personalizado",
+        "texto": "Partimos de un diagnóstico de tu voz para reforzar tus puntos débiles y potenciar tus fortalezas."
+      },
+      {
+        "titulo": "Técnica sólida",
+        "texto": "Respiración, afinación, resonancia y proyección con Estill Voice Training, para cantar con salud vocal."
+      },
+      {
+        "titulo": "Ambiente seguro y motivador",
+        "texto": "Un espacio de confianza donde equivocarse forma parte del aprendizaje y cada clase se disfruta."
+      },
+      {
+        "titulo": "Confianza escénica",
+        "texto": "Trabajamos los nervios y los bloqueos con herramientas de la terapia Gestalt, y lo llevamos al escenario."
+      }
     ]
   },
   "sobreMi": {
@@ -52,7 +64,11 @@
         "nombre": "Primera clase",
         "destacada": false,
         "etiqueta": "",
-        "incluye": ["Conocemos tu voz y tus objetivos", "Te propongo un plan de trabajo", "Presencial u online"],
+        "incluye": [
+          "Conocemos tu voz y tus objetivos",
+          "Te propongo un plan de trabajo",
+          "Presencial u online"
+        ],
         "precio": "Gratis",
         "unidad": "",
         "nota": "Sin compromiso",
@@ -63,7 +79,11 @@
         "nombre": "Pack mensual",
         "destacada": true,
         "etiqueta": "Opción recomendada",
-        "incluye": ["4 clases al mes, 1 hora semanal", "Presencial u online", "Acceso a los conciertos de alumnos"],
+        "incluye": [
+          "4 clases al mes, 1 hora semanal",
+          "Presencial u online",
+          "Acceso a los conciertos de alumnos"
+        ],
         "precio": "120 €",
         "unidad": "al mes",
         "nota": "Equivale a 30 € por clase",
@@ -74,7 +94,11 @@
         "nombre": "Clase suelta",
         "destacada": false,
         "etiqueta": "",
-        "incluye": ["1 hora", "Presencial u online", "Para algo concreto o preparar una actuación"],
+        "incluye": [
+          "1 hora",
+          "Presencial u online",
+          "Para algo concreto o preparar una actuación"
+        ],
         "precio": "40 €",
         "unidad": "la clase",
         "nota": "",
@@ -91,11 +115,31 @@
     "entradilla": "Cada tres meses nos subimos juntos a un escenario de Barcelona. Es la mejor forma de ver cuánto has avanzado, perder el miedo al público y compartirlo con los compañeros.",
     "texto": "Muchos alumnos llevan años formándose conmigo. Más que una clase, es un grupo con el que da gusto cantar.",
     "galeria": [
-      { "imagen": "/img/concierto-1.jpg", "textoAlternativo": "Alumna cantando en un concierto de alumnos", "formato": "alta" },
-      { "imagen": "/img/estudio.jpg", "textoAlternativo": "Alumna grabando en el estudio con auriculares", "formato": "ancha" },
-      { "imagen": "/img/concierto-3.jpg", "textoAlternativo": "Alumna interpretando una canción en el escenario", "formato": "alta" },
-      { "imagen": "/img/concierto-2.jpg", "textoAlternativo": "Alumna cantando sentada en el escenario", "formato": "normal" },
-      { "imagen": "/img/publico.jpg", "textoAlternativo": "Público en un concierto de alumnos", "formato": "normal" }
+      {
+        "imagen": "/img/concierto-1.jpg",
+        "textoAlternativo": "Alumna cantando en un concierto de alumnos",
+        "formato": "alta"
+      },
+      {
+        "imagen": "/img/estudio.jpg",
+        "textoAlternativo": "Alumna grabando en el estudio con auriculares",
+        "formato": "ancha"
+      },
+      {
+        "imagen": "/img/concierto-3.jpg",
+        "textoAlternativo": "Alumna interpretando una canción en el escenario",
+        "formato": "alta"
+      },
+      {
+        "imagen": "/img/concierto-2.jpg",
+        "textoAlternativo": "Alumna cantando sentada en el escenario",
+        "formato": "normal"
+      },
+      {
+        "imagen": "/img/publico.jpg",
+        "textoAlternativo": "Público en un concierto de alumnos",
+        "formato": "normal"
+      }
     ]
   },
   "musica": {
@@ -109,9 +153,18 @@
     "antetitulo": "Opiniones",
     "titulo": "Lo que dicen mis alumnos",
     "lista": [
-      { "nombre": "Sandra", "texto": "Tras probar con distintas personas, encontré lo que buscaba en una profesora de clases de canto. He notado mucho la mejoría desde que empecé con Inma. Tiene mucho talento y carisma, y te hace sentir seguro y sabe encontrar y exprimir lo mejor de ti! Siempre está organizando actividades y conciertos para que podamos hacer distintas cosas con ella. 100% recomendada!" },
-      { "nombre": "Natalia", "texto": "Inma es una profesora excelente que se adapta super bien a tus necesidades específicas. Estuve con una profesora durante 2 años y no tuve apenas progresos, pero con Inma en menos de 1 año desbloqueé debilidades en mi voz y cogí más confianza en cantar canciones más exigentes que no conseguía cantarlas antes de conocerla a ella. Las clases de Inma se hacen super amenas porque es una mujer muy divertida, dicharachera y te ayuda en todo lo que pueda. Además me encanta que cada tres meses organiza diferentes conciertos en algún local de Barcelona donde podemos exponer nuestros progresos como alumnos." },
-      { "nombre": "Antonio", "texto": "Llevo 10 años dando clase con Inma y seguiría otros 10! En todo este tiempo me ha ayudado a mejorar la técnica y a superar bloqueos psicológicos con cariño y paciencia. Es la mejor, muy recomendable :)" }
+      {
+        "nombre": "Sandra",
+        "texto": "Tras probar con distintas personas, encontré lo que buscaba en una profesora de clases de canto. He notado mucho la mejoría desde que empecé con Inma. Tiene mucho talento y carisma, y te hace sentir seguro y sabe encontrar y exprimir lo mejor de ti! Siempre está organizando actividades y conciertos para que podamos hacer distintas cosas con ella. 100% recomendada!"
+      },
+      {
+        "nombre": "Natalia",
+        "texto": "Inma es una profesora excelente que se adapta super bien a tus necesidades específicas. Estuve con una profesora durante 2 años y no tuve apenas progresos, pero con Inma en menos de 1 año desbloqueé debilidades en mi voz y cogí más confianza en cantar canciones más exigentes que no conseguía cantarlas antes de conocerla a ella. Las clases de Inma se hacen super amenas porque es una mujer muy divertida, dicharachera y te ayuda en todo lo que pueda. Además me encanta que cada tres meses organiza diferentes conciertos en algún local de Barcelona donde podemos exponer nuestros progresos como alumnos."
+      },
+      {
+        "nombre": "Antonio",
+        "texto": "Llevo 10 años dando clase con Inma y seguiría otros 10! En todo este tiempo me ha ayudado a mejorar la técnica y a superar bloqueos psicológicos con cariño y paciencia. Es la mejor, muy recomendable :)"
+      }
     ]
   },
   "preguntas": {
@@ -119,12 +172,30 @@
     "antetitulo": "Preguntas frecuentes",
     "titulo": "Antes de empezar",
     "lista": [
-      { "pregunta": "¿Necesito saber cantar para empezar?", "respuesta": "No. Trabajo con alumnos de todos los niveles, desde quien nunca ha cantado hasta profesionales que quieren perfeccionar su técnica." },
-      { "pregunta": "¿Cuánto cuestan las clases de canto?", "respuesta": "La primera clase es gratis. El pack de 4 clases al mes (1 hora semanal) cuesta 120 €, es decir, 30 € por clase. La clase suelta cuesta 40 €." },
-      { "pregunta": "¿Dónde son las clases presenciales?", "respuesta": "En Sants (Barcelona), a 5 minutos andando de la estación de Sants. Te paso la dirección exacta cuando reservas." },
-      { "pregunta": "¿Las clases online funcionan igual?", "respuesta": "Sí. Son por videollamada, con el mismo método y la misma duración que las presenciales." },
-      { "pregunta": "¿Qué es Estill Voice Training?", "respuesta": "Es un método de técnica vocal que explica qué hace cada parte del aparato vocal, para que puedas controlar tu voz con conciencia y sin forzarla." },
-      { "pregunta": "¿Hay oportunidades de cantar en público?", "respuesta": "Sí. Cada tres meses organizo conciertos de alumnos en locales de Barcelona para que veas tu evolución y la compartas con los compañeros." }
+      {
+        "pregunta": "¿Necesito saber cantar para empezar?",
+        "respuesta": "No. Trabajo con alumnos de todos los niveles, desde quien nunca ha cantado hasta profesionales que quieren perfeccionar su técnica."
+      },
+      {
+        "pregunta": "¿Cuánto cuestan las clases de canto?",
+        "respuesta": "La primera clase es gratis. El pack de 4 clases al mes (1 hora semanal) cuesta 120 €, es decir, 30 € por clase. La clase suelta cuesta 40 €."
+      },
+      {
+        "pregunta": "¿Dónde son las clases presenciales?",
+        "respuesta": "En Sants (Barcelona), a 5 minutos andando de la estación de Sants. Te paso la dirección exacta cuando reservas."
+      },
+      {
+        "pregunta": "¿Las clases online funcionan igual?",
+        "respuesta": "Sí. Son por videollamada, con el mismo método y la misma duración que las presenciales."
+      },
+      {
+        "pregunta": "¿Qué es Estill Voice Training?",
+        "respuesta": "Es un método de técnica vocal que explica qué hace cada parte del aparato vocal, para que puedas controlar tu voz con conciencia y sin forzarla."
+      },
+      {
+        "pregunta": "¿Hay oportunidades de cantar en público?",
+        "respuesta": "Sí. Cada tres meses organizo conciertos de alumnos en locales de Barcelona para que veas tu evolución y la compartas con los compañeros."
+      }
     ]
   },
   "contacto": {
