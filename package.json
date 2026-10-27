@@ -1,0 +1,21 @@
+{
+  "name": "web-inma-gomes",
+  "private": true,
+  "scripts": {
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "node scripts/build.mjs",
+    "start": "npx serve out"
+  },
+  "dependencies": {
+    "next": "^15.5.28",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tinacms": "^3.15.0"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^4.0.4",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "typescript": "^5.9.3"
+  }
+}

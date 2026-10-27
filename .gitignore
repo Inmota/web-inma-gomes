@@ -1,2 +1,6 @@
-.netlify
-.DS_Store
+node_modules
+.next
+out
+public/admin
+tina/__generated__
+.env
