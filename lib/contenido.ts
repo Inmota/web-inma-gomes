@@ -20,3 +20,12 @@ export async function cargarInicio(): Promise<ContenidoInicio> {
     return { query: "", variables: {}, data: { pagina } };
   }
 }
+
+// Bloques visibles de un tipo (portada, precios, preguntas…), estén donde estén en la página.
+export function bloquesDe(pagina: any, tipo: string): any[] {
+  return (pagina?.bloques || []).filter((b: any) => {
+    if (!b || b.ocultar) return false;
+    const t = b._template || String(b.__typename || "").replace(/^PaginaBloques/, "");
+    return t.toLowerCase() === tipo.toLowerCase();
+  });
+}

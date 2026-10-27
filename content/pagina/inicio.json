@@ -1,216 +1,238 @@
 {
-  "seo": {
-    "titulo": "Clases de canto en Barcelona (Sants) y online | Inma Gomes",
-    "descripcion": "Clases de canto personalizadas en Sants (Barcelona) y online con Inma Gomes, vocal coach con Título Superior en Canto Jazz (Liceu) y Estill Voice Training. 17 años de experiencia. Primera clase gratis.",
-    "descripcionRedes": "Clases de canto personalizadas con vocal coach: técnica Estill, confianza escénica y conciertos de alumnos cada tres meses. Primera clase gratis."
-  },
-  "portada": {
-    "imagen": "/img/inma-hero.jpg",
-    "textoAlternativo": "Inma Gomes cantando con las manos alzadas",
-    "antetitulo": "Inma Gomes · Vocal coach",
-    "titulo": "Clases de canto en Barcelona para que tu voz",
-    "tituloDestacado": "suene auténtica",
-    "texto": "Más de 17 años ayudando a desbloquear tu potencial vocal y a sacar el máximo partido a tu instrumento.",
-    "botonPrincipal": "Reservar primera clase gratis",
-    "botonSecundario": "Ver precios"
-  },
-  "lema": {
-    "frase": "Cantar es descubrir la música que vive en ti y dejar que suene con la autenticidad de tu voz",
-    "autora": "Inma Gomes"
-  },
-  "metodo": {
-    "antetitulo": "Mis clases",
-    "titulo": "Mi forma de trabajar",
-    "texto": "¿Te apasiona el canto y quieres llevar tu talento al siguiente nivel? Déjame ayudarte. Cada clase se adapta a tus necesidades y objetivos individuales, creando un ambiente seguro y motivador.",
-    "pilares": [
-      {
-        "titulo": "Enfoque personalizado",
-        "texto": "Partimos de un diagnóstico de tu voz para reforzar tus puntos débiles y potenciar tus fortalezas."
-      },
-      {
-        "titulo": "Técnica sólida",
-        "texto": "Respiración, afinación, resonancia y proyección con Estill Voice Training, para cantar con salud vocal."
-      },
-      {
-        "titulo": "Ambiente seguro y motivador",
-        "texto": "Un espacio de confianza donde equivocarse forma parte del aprendizaje y cada clase se disfruta."
-      },
-      {
-        "titulo": "Confianza escénica",
-        "texto": "Trabajamos los nervios y los bloqueos con herramientas de la terapia Gestalt, y lo llevamos al escenario."
-      }
-    ]
-  },
-  "sobreMi": {
-    "foto": "/img/inma-retrato.jpg",
-    "textoAlternativo": "Retrato de Inma Gomes sonriendo",
-    "antetitulo": "Quién soy",
-    "titulo": "Hola, soy Inma Gomes",
-    "entradilla": "Cantante profesional, vocal coach y entrenadora vocal en Barcelona. Acompaño a alumnos de todos los niveles, desde quien nunca ha cantado hasta profesionales que quieren perfeccionar su técnica.",
-    "texto": "Mi enfoque se centra en entender cómo aprende cada persona y en un desarrollo personalizado. Combino una sólida base académica con el método Estill Voice Training para ofrecer una enseñanza innovadora y efectiva.",
-    "formacion": [
-      "Grado Superior de Música, especialidad Canto Jazz, por el Conservatori del Liceu de Barcelona",
-      "Formación en técnica vocal Estill Voice Training (Voice Craft)",
-      "Terapeuta Gestalt"
-    ]
-  },
-  "precios": {
-    "antetitulo": "Tarifas",
-    "titulo": "Clases individuales, presenciales u online",
-    "texto": "Sesiones de una hora en Sants, a 5 minutos andando de la estación, o por videollamada, con el mismo método y el mismo seguimiento.",
-    "aviso": "La primera clase es gratis y sin compromiso",
-    "tarifas": [
-      {
-        "nombre": "Primera clase",
-        "destacada": false,
-        "etiqueta": "",
-        "incluye": [
-          "Conocemos tu voz y tus objetivos",
-          "Te propongo un plan de trabajo",
-          "Presencial u online"
-        ],
-        "precio": "Gratis",
-        "unidad": "",
-        "nota": "Sin compromiso",
-        "boton": "Reservar clase gratis",
-        "opcionFormulario": "Primera clase gratis"
-      },
-      {
-        "nombre": "Pack mensual",
-        "destacada": true,
-        "etiqueta": "Opción recomendada",
-        "incluye": [
-          "4 clases al mes, 1 hora semanal",
-          "Presencial u online",
-          "Acceso a los conciertos de alumnos"
-        ],
-        "precio": "120 €",
-        "unidad": "al mes",
-        "nota": "Equivale a 30 € por clase",
-        "boton": "Empezar con el pack",
-        "opcionFormulario": "Pack mensual"
-      },
-      {
-        "nombre": "Clase suelta",
-        "destacada": false,
-        "etiqueta": "",
-        "incluye": [
-          "1 hora",
-          "Presencial u online",
-          "Para algo concreto o preparar una actuación"
-        ],
-        "precio": "40 €",
-        "unidad": "la clase",
-        "nota": "",
-        "boton": "Reservar una clase",
-        "opcionFormulario": "Clase suelta"
-      }
-    ]
-  },
-  "conciertos": {
-    "antetitulo": "Una comunidad que canta junta",
-    "titulo": "Conciertos de alumnos cada tres meses",
-    "fotoGrupo": "/img/grupo-alumnos.jpg",
-    "textoAlternativoGrupo": "Inma con un grupo de alumnos sonriendo tras un concierto en Barcelona",
-    "entradilla": "Cada tres meses nos subimos juntos a un escenario de Barcelona. Es la mejor forma de ver cuánto has avanzado, perder el miedo al público y compartirlo con los compañeros.",
-    "texto": "Muchos alumnos llevan años formándose conmigo. Más que una clase, es un grupo con el que da gusto cantar.",
-    "galeria": [
-      {
-        "imagen": "/img/concierto-1.jpg",
-        "textoAlternativo": "Alumna cantando en un concierto de alumnos",
-        "formato": "alta"
-      },
-      {
-        "imagen": "/img/estudio.jpg",
-        "textoAlternativo": "Alumna grabando en el estudio con auriculares",
-        "formato": "ancha"
-      },
-      {
-        "imagen": "/img/concierto-3.jpg",
-        "textoAlternativo": "Alumna interpretando una canción en el escenario",
-        "formato": "alta"
-      },
-      {
-        "imagen": "/img/concierto-2.jpg",
-        "textoAlternativo": "Alumna cantando sentada en el escenario",
-        "formato": "normal"
-      },
-      {
-        "imagen": "/img/publico.jpg",
-        "textoAlternativo": "Público en un concierto de alumnos",
-        "formato": "normal"
-      }
-    ]
-  },
-  "musica": {
-    "antetitulo": "Mi música",
-    "titulo": "Escúchame cantar",
-    "texto": "Así suena mi voz. En mi canal de YouTube encontrarás más actuaciones.",
-    "video": "https://www.youtube.com/watch?v=lQod-Xw2TwA",
-    "boton": "Ver mi canal de YouTube"
-  },
-  "opiniones": {
-    "antetitulo": "Opiniones",
-    "titulo": "Lo que dicen mis alumnos",
-    "lista": [
-      {
-        "nombre": "Sandra",
-        "texto": "Tras probar con distintas personas, encontré lo que buscaba en una profesora de clases de canto. He notado mucho la mejoría desde que empecé con Inma. Tiene mucho talento y carisma, y te hace sentir seguro y sabe encontrar y exprimir lo mejor de ti! Siempre está organizando actividades y conciertos para que podamos hacer distintas cosas con ella. 100% recomendada!"
-      },
-      {
-        "nombre": "Natalia",
-        "texto": "Inma es una profesora excelente que se adapta super bien a tus necesidades específicas. Estuve con una profesora durante 2 años y no tuve apenas progresos, pero con Inma en menos de 1 año desbloqueé debilidades en mi voz y cogí más confianza en cantar canciones más exigentes que no conseguía cantarlas antes de conocerla a ella. Las clases de Inma se hacen super amenas porque es una mujer muy divertida, dicharachera y te ayuda en todo lo que pueda. Además me encanta que cada tres meses organiza diferentes conciertos en algún local de Barcelona donde podemos exponer nuestros progresos como alumnos."
-      },
-      {
-        "nombre": "Antonio",
-        "texto": "Llevo 10 años dando clase con Inma y seguiría otros 10! En todo este tiempo me ha ayudado a mejorar la técnica y a superar bloqueos psicológicos con cariño y paciencia. Es la mejor, muy recomendable :)"
-      }
-    ]
-  },
-  "preguntas": {
-    "foto": "/img/inma-pared.jpg",
-    "antetitulo": "Preguntas frecuentes",
-    "titulo": "Antes de empezar",
-    "lista": [
-      {
-        "pregunta": "¿Necesito saber cantar para empezar?",
-        "respuesta": "No. Trabajo con alumnos de todos los niveles, desde quien nunca ha cantado hasta profesionales que quieren perfeccionar su técnica."
-      },
-      {
-        "pregunta": "¿Cuánto cuestan las clases de canto?",
-        "respuesta": "La primera clase es gratis. El pack de 4 clases al mes (1 hora semanal) cuesta 120 €, es decir, 30 € por clase. La clase suelta cuesta 40 €."
-      },
-      {
-        "pregunta": "¿Dónde son las clases presenciales?",
-        "respuesta": "En Sants (Barcelona), a 5 minutos andando de la estación de Sants. Te paso la dirección exacta cuando reservas."
-      },
-      {
-        "pregunta": "¿Las clases online funcionan igual?",
-        "respuesta": "Sí. Son por videollamada, con el mismo método y la misma duración que las presenciales."
-      },
-      {
-        "pregunta": "¿Qué es Estill Voice Training?",
-        "respuesta": "Es un método de técnica vocal que explica qué hace cada parte del aparato vocal, para que puedas controlar tu voz con conciencia y sin forzarla."
-      },
-      {
-        "pregunta": "¿Hay oportunidades de cantar en público?",
-        "respuesta": "Sí. Cada tres meses organizo conciertos de alumnos en locales de Barcelona para que veas tu evolución y la compartas con los compañeros."
-      }
-    ]
-  },
-  "contacto": {
-    "antetitulo": "Tu primera clase es gratis",
-    "titulo": "¿Cantamos?",
-    "texto": "Escríbeme por WhatsApp o déjame un mensaje, cuéntame un poco sobre ti y buscamos un hueco. Te respondo en menos de 24 horas.",
-    "mensajeWhatsApp": "Hola Inma, me gustaría reservar la primera clase gratis",
+  "bloques": [
+    {
+      "_template": "portada",
+      "ocultar": false,
+      "imagen": "/img/inma-hero.jpg",
+      "textoAlternativo": "Inma Gomes cantando con las manos alzadas",
+      "antetitulo": "Inma Gomes · Vocal coach",
+      "titulo": "Clases de canto en Barcelona para que tu voz",
+      "tituloDestacado": "suene auténtica",
+      "texto": "Más de 17 años ayudando a desbloquear tu potencial vocal y a sacar el máximo partido a tu instrumento.",
+      "botonPrincipal": "Reservar primera clase gratis",
+      "botonSecundario": "Ver precios"
+    },
+    {
+      "_template": "lema",
+      "ocultar": false,
+      "frase": "Cantar es descubrir la música que vive en ti y dejar que suene con la autenticidad de tu voz",
+      "autora": "Inma Gomes"
+    },
+    {
+      "_template": "metodo",
+      "ocultar": false,
+      "antetitulo": "Mis clases",
+      "titulo": "Mi forma de trabajar",
+      "texto": "¿Te apasiona el canto y quieres llevar tu talento al siguiente nivel? Déjame ayudarte. Cada clase se adapta a tus necesidades y objetivos individuales, creando un ambiente seguro y motivador.",
+      "pilares": [
+        {
+          "titulo": "Enfoque personalizado",
+          "texto": "Partimos de un diagnóstico de tu voz para reforzar tus puntos débiles y potenciar tus fortalezas."
+        },
+        {
+          "titulo": "Técnica sólida",
+          "texto": "Respiración, afinación, resonancia y proyección con Estill Voice Training, para cantar con salud vocal."
+        },
+        {
+          "titulo": "Ambiente seguro y motivador",
+          "texto": "Un espacio de confianza donde equivocarse forma parte del aprendizaje y cada clase se disfruta."
+        },
+        {
+          "titulo": "Confianza escénica",
+          "texto": "Trabajamos los nervios y los bloqueos con herramientas de la terapia Gestalt, y lo llevamos al escenario."
+        }
+      ]
+    },
+    {
+      "_template": "sobreMi",
+      "ocultar": false,
+      "foto": "/img/inma-retrato.jpg",
+      "textoAlternativo": "Retrato de Inma Gomes sonriendo",
+      "antetitulo": "Quién soy",
+      "titulo": "Hola, soy Inma Gomes",
+      "entradilla": "Cantante profesional, vocal coach y entrenadora vocal en Barcelona. Acompaño a alumnos de todos los niveles, desde quien nunca ha cantado hasta profesionales que quieren perfeccionar su técnica.",
+      "texto": "Mi enfoque se centra en entender cómo aprende cada persona y en un desarrollo personalizado. Combino una sólida base académica con el método Estill Voice Training para ofrecer una enseñanza innovadora y efectiva.",
+      "formacion": [
+        "Grado Superior de Música, especialidad Canto Jazz, por el Conservatori del Liceu de Barcelona",
+        "Formación en técnica vocal Estill Voice Training (Voice Craft)",
+        "Terapeuta Gestalt"
+      ]
+    },
+    {
+      "_template": "precios",
+      "ocultar": false,
+      "antetitulo": "Tarifas",
+      "titulo": "Clases individuales, presenciales u online",
+      "texto": "Sesiones de una hora en Sants, a 5 minutos andando de la estación, o por videollamada, con el mismo método y el mismo seguimiento.",
+      "aviso": "La primera clase es gratis y sin compromiso",
+      "tarifas": [
+        {
+          "nombre": "Primera clase",
+          "destacada": false,
+          "etiqueta": "",
+          "incluye": [
+            "Conocemos tu voz y tus objetivos",
+            "Te propongo un plan de trabajo",
+            "Presencial u online"
+          ],
+          "precio": "Gratis",
+          "unidad": "",
+          "nota": "Sin compromiso",
+          "boton": "Reservar clase gratis",
+          "opcionFormulario": "Primera clase gratis"
+        },
+        {
+          "nombre": "Pack mensual",
+          "destacada": true,
+          "etiqueta": "Opción recomendada",
+          "incluye": [
+            "4 clases al mes, 1 hora semanal",
+            "Presencial u online",
+            "Acceso a los conciertos de alumnos"
+          ],
+          "precio": "120 €",
+          "unidad": "al mes",
+          "nota": "Equivale a 30 € por clase",
+          "boton": "Empezar con el pack",
+          "opcionFormulario": "Pack mensual"
+        },
+        {
+          "nombre": "Clase suelta",
+          "destacada": false,
+          "etiqueta": "",
+          "incluye": [
+            "1 hora",
+            "Presencial u online",
+            "Para algo concreto o preparar una actuación"
+          ],
+          "precio": "40 €",
+          "unidad": "la clase",
+          "nota": "",
+          "boton": "Reservar una clase",
+          "opcionFormulario": "Clase suelta"
+        }
+      ]
+    },
+    {
+      "_template": "conciertos",
+      "ocultar": false,
+      "antetitulo": "Una comunidad que canta junta",
+      "titulo": "Conciertos de alumnos cada tres meses",
+      "fotoGrupo": "/img/grupo-alumnos.jpg",
+      "textoAlternativoGrupo": "Inma con un grupo de alumnos sonriendo tras un concierto en Barcelona",
+      "entradilla": "Cada tres meses nos subimos juntos a un escenario de Barcelona. Es la mejor forma de ver cuánto has avanzado, perder el miedo al público y compartirlo con los compañeros.",
+      "texto": "Muchos alumnos llevan años formándose conmigo. Más que una clase, es un grupo con el que da gusto cantar.",
+      "galeria": [
+        {
+          "imagen": "/img/concierto-1.jpg",
+          "textoAlternativo": "Alumna cantando en un concierto de alumnos",
+          "formato": "alta"
+        },
+        {
+          "imagen": "/img/estudio.jpg",
+          "textoAlternativo": "Alumna grabando en el estudio con auriculares",
+          "formato": "ancha"
+        },
+        {
+          "imagen": "/img/concierto-3.jpg",
+          "textoAlternativo": "Alumna interpretando una canción en el escenario",
+          "formato": "alta"
+        },
+        {
+          "imagen": "/img/concierto-2.jpg",
+          "textoAlternativo": "Alumna cantando sentada en el escenario",
+          "formato": "normal"
+        },
+        {
+          "imagen": "/img/publico.jpg",
+          "textoAlternativo": "Público en un concierto de alumnos",
+          "formato": "normal"
+        }
+      ]
+    },
+    {
+      "_template": "musica",
+      "ocultar": false,
+      "antetitulo": "Mi música",
+      "titulo": "Escúchame cantar",
+      "texto": "Así suena mi voz. En mi canal de YouTube encontrarás más actuaciones.",
+      "video": "https://www.youtube.com/watch?v=lQod-Xw2TwA",
+      "boton": "Ver mi canal de YouTube"
+    },
+    {
+      "_template": "opiniones",
+      "ocultar": false,
+      "antetitulo": "Opiniones",
+      "titulo": "Lo que dicen mis alumnos",
+      "lista": [
+        {
+          "nombre": "Sandra",
+          "texto": "Tras probar con distintas personas, encontré lo que buscaba en una profesora de clases de canto. He notado mucho la mejoría desde que empecé con Inma. Tiene mucho talento y carisma, y te hace sentir seguro y sabe encontrar y exprimir lo mejor de ti! Siempre está organizando actividades y conciertos para que podamos hacer distintas cosas con ella. 100% recomendada!"
+        },
+        {
+          "nombre": "Natalia",
+          "texto": "Inma es una profesora excelente que se adapta super bien a tus necesidades específicas. Estuve con una profesora durante 2 años y no tuve apenas progresos, pero con Inma en menos de 1 año desbloqueé debilidades en mi voz y cogí más confianza en cantar canciones más exigentes que no conseguía cantarlas antes de conocerla a ella. Las clases de Inma se hacen super amenas porque es una mujer muy divertida, dicharachera y te ayuda en todo lo que pueda. Además me encanta que cada tres meses organiza diferentes conciertos en algún local de Barcelona donde podemos exponer nuestros progresos como alumnos."
+        },
+        {
+          "nombre": "Antonio",
+          "texto": "Llevo 10 años dando clase con Inma y seguiría otros 10! En todo este tiempo me ha ayudado a mejorar la técnica y a superar bloqueos psicológicos con cariño y paciencia. Es la mejor, muy recomendable :)"
+        }
+      ]
+    },
+    {
+      "_template": "preguntas",
+      "ocultar": false,
+      "foto": "/img/inma-pared.jpg",
+      "antetitulo": "Preguntas frecuentes",
+      "titulo": "Antes de empezar",
+      "lista": [
+        {
+          "pregunta": "¿Necesito saber cantar para empezar?",
+          "respuesta": "No. Trabajo con alumnos de todos los niveles, desde quien nunca ha cantado hasta profesionales que quieren perfeccionar su técnica."
+        },
+        {
+          "pregunta": "¿Cuánto cuestan las clases de canto?",
+          "respuesta": "La primera clase es gratis. El pack de 4 clases al mes (1 hora semanal) cuesta 120 €, es decir, 30 € por clase. La clase suelta cuesta 40 €."
+        },
+        {
+          "pregunta": "¿Dónde son las clases presenciales?",
+          "respuesta": "En Sants (Barcelona), a 5 minutos andando de la estación de Sants. Te paso la dirección exacta cuando reservas."
+        },
+        {
+          "pregunta": "¿Las clases online funcionan igual?",
+          "respuesta": "Sí. Son por videollamada, con el mismo método y la misma duración que las presenciales."
+        },
+        {
+          "pregunta": "¿Qué es Estill Voice Training?",
+          "respuesta": "Es un método de técnica vocal que explica qué hace cada parte del aparato vocal, para que puedas controlar tu voz con conciencia y sin forzarla."
+        },
+        {
+          "pregunta": "¿Hay oportunidades de cantar en público?",
+          "respuesta": "Sí. Cada tres meses organizo conciertos de alumnos en locales de Barcelona para que veas tu evolución y la compartas con los compañeros."
+        }
+      ]
+    },
+    {
+      "_template": "contacto",
+      "ocultar": false,
+      "antetitulo": "Tu primera clase es gratis",
+      "titulo": "¿Cantamos?",
+      "texto": "Escríbeme por WhatsApp o déjame un mensaje, cuéntame un poco sobre ti y buscamos un hueco. Te respondo en menos de 24 horas.",
+      "foto": "/img/inma-sonrisa.jpg",
+      "tituloFormulario": "Déjame un mensaje"
+    }
+  ],
+  "datos": {
     "telefono": "650 236 511",
     "email": "auladevoz@gmail.com",
     "zona": "Sants (Barcelona), a 5 min de la estación, y online",
     "youtube": "https://www.youtube.com/@auladevoz",
-    "foto": "/img/inma-sonrisa.jpg",
-    "tituloFormulario": "Déjame un mensaje"
+    "mensajeWhatsApp": "Hola Inma, me gustaría reservar la primera clase gratis",
+    "textoPie": "Clases de canto en Sants, Barcelona, y online"
   },
-  "pie": {
-    "texto": "Clases de canto en Sants, Barcelona, y online"
+  "seo": {
+    "titulo": "Clases de canto en Barcelona (Sants) y online | Inma Gomes",
+    "descripcion": "Clases de canto personalizadas en Sants (Barcelona) y online con Inma Gomes, vocal coach con Título Superior en Canto Jazz (Liceu) y Estill Voice Training. 17 años de experiencia. Primera clase gratis.",
+    "descripcionRedes": "Clases de canto personalizadas con vocal coach: técnica Estill, confianza escénica y conciertos de alumnos cada tres meses. Primera clase gratis."
   }
 }

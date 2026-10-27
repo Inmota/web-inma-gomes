@@ -22,8 +22,8 @@ export default function Comportamiento() {
     links.addEventListener("click", onLinks);
     document.addEventListener("keydown", onKey);
 
-    const hero = document.getElementById("inicio")!;
-    const contact = document.getElementById("contacto")!;
+    const hero = document.getElementById("inicio");
+    const contact = document.getElementById("contacto");
     const sticky = document.querySelectorAll(".sticky-cta");
     let pastHero = false, atContact = false;
     const update = () => {
@@ -35,9 +35,10 @@ export default function Comportamiento() {
       const o1 = new IntersectionObserver((e) => {
         pastHero = !e[0].isIntersecting && e[0].boundingClientRect.top < 0; update();
       }, { rootMargin: "-80px 0px 0px 0px" });
-      o1.observe(hero.querySelector(".hero-ctas")!);
+      const ctas = hero?.querySelector(".hero-ctas");
+      if (ctas) o1.observe(ctas); else pastHero = true;
       const o2 = new IntersectionObserver((e) => { atContact = e[0].isIntersecting; update(); });
-      o2.observe(contact);
+      if (contact) o2.observe(contact);
       observers.push(o1, o2);
     }
     window.addEventListener("scroll", update, { passive: true });
@@ -52,7 +53,7 @@ export default function Comportamiento() {
     document.addEventListener("click", onDoc);
 
     // Validación accesible del formulario
-    const form = document.querySelector<HTMLFormElement>('form[name="contacto"]')!;
+    const form = document.querySelector<HTMLFormElement>('form[name="contacto"]');
     const onSubmit = (e: Event) => {
       let first: HTMLInputElement | null = null;
       form.querySelectorAll<HTMLInputElement>("[required]").forEach((f) => {
@@ -71,8 +72,8 @@ export default function Comportamiento() {
         f.setAttribute("aria-invalid", "false");
       }
     };
-    form.addEventListener("submit", onSubmit);
-    form.addEventListener("input", onInput);
+    form?.addEventListener("submit", onSubmit);
+    form?.addEventListener("input", onInput);
 
     return () => {
       btn.removeEventListener("click", onBtn);
@@ -80,8 +81,8 @@ export default function Comportamiento() {
       document.removeEventListener("keydown", onKey);
       window.removeEventListener("scroll", update);
       document.removeEventListener("click", onDoc);
-      form.removeEventListener("submit", onSubmit);
-      form.removeEventListener("input", onInput);
+      form?.removeEventListener("submit", onSubmit);
+      form?.removeEventListener("input", onInput);
       observers.forEach((o) => o.disconnect());
     };
   }, []);
