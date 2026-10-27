@@ -102,7 +102,8 @@ header.solid{background:rgba(10,14,23,.94);backdrop-filter:blur(10px);border-col
 .nav ul a:hover{opacity:1}
 .nav .btn{padding:10px 20px;font-size:.88rem}
 @media (max-width:960px){.nav ul{display:none}}
-@media (max-width:560px){.brand{font-size:1.05rem;letter-spacing:.1em}.nav .btn{display:none}}
+.nav .short{display:none}
+@media (max-width:560px){.brand{font-size:.95rem;letter-spacing:.08em;white-space:normal;line-height:1.2;max-width:60%}.nav .btn{padding:8px 16px;font-size:.82rem;white-space:nowrap}.nav .long{display:none}.nav .short{display:inline}}
 
 /* Hero */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;padding:0;background:var(--night);color:#fff;overflow:hidden}
@@ -221,7 +222,7 @@ footer strong{color:#fff;font-family:"Cormorant Garamond",serif;font-size:1.2rem
       <li><a href="#opiniones">Opiniones</a></li>
       <li><a href="#faq">Preguntas</a></li>
     </ul>
-    <a class="btn btn-light" href="#contacto">Primera clase gratis</a>
+    <a class="btn btn-light" href="#contacto"><span class="long">Reservar clase gratis</span><span class="short">Reservar</span></a>
   </nav>
 </header>
 
@@ -235,7 +236,7 @@ footer strong{color:#fff;font-family:"Cormorant Garamond",serif;font-size:1.2rem
       <h1>Clases de canto en Barcelona para descubrir <em>tu voz</em></h1>
       <p class="lead">Clases personalizadas de canto y técnica vocal con Inma Gomes, cantante profesional con Título Superior en Canto Jazz y formación en Estill Voice Training.</p>
       <div class="hero-ctas">
-        <a class="btn btn-light" href="#contacto">Reserva tu primera clase gratis</a>
+        <a class="btn btn-light" href="#contacto">Reservar primera clase gratis</a>
         <a class="btn btn-ghost" href="#clases">Ver precios</a>
       </div>
       <div class="trust">
@@ -356,7 +357,7 @@ footer strong{color:#fff;font-family:"Cormorant Garamond",serif;font-size:1.2rem
   <div class="wrap contact-grid">
     <div>
       <span class="eyebrow">¿Te apuntas?</span>
-      <h2 id="contacto-h">Reserva tu primera clase gratis</h2>
+      <h2 id="contacto-h">Reservar primera clase gratis</h2>
       <p>Escríbeme por WhatsApp o con el formulario, cuéntame un poco sobre ti y buscamos un horario.</p>
       <ul class="contact-list">
         <li>📍 <span>Sants, Barcelona, y online</span></li>
@@ -364,7 +365,7 @@ footer strong{color:#fff;font-family:"Cormorant Garamond",serif;font-size:1.2rem
         <li>✉️ <a href="mailto:auladevoz@gmail.com">auladevoz@gmail.com</a></li>
         <li>▶️ <a href="https://www.youtube.com/@auladevoz" rel="noopener" target="_blank">YouTube: @auladevoz</a></li>
       </ul>
-      <a class="btn btn-wa" href="https://wa.me/34650236511?text=Hola%20Inma%2C%20me%20gustar%C3%ADa%20reservar%20la%20primera%20clase%20gratis" rel="noopener" target="_blank">Escríbeme por WhatsApp</a>
+      <a class="btn btn-wa" href="https://wa.me/34650236511?text=Hola%20Inma%2C%20me%20gustar%C3%ADa%20reservar%20la%20primera%20clase%20gratis" rel="noopener" target="_blank">Escribir por WhatsApp</a>
       <div class="contact-photo"><img src="img/inma-pared.jpg" alt="Inma Gomes, coach vocal en Barcelona"></div>
     </div>
     <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="empresa" action="/gracias.html">
@@ -379,7 +380,7 @@ footer strong{color:#fff;font-family:"Cormorant Garamond",serif;font-size:1.2rem
         </select>
       </label>
       <label>Cuéntame tu experiencia y lo que quieres conseguir <textarea name="mensaje" rows="4"></textarea></label>
-      <button class="btn btn-primary" type="submit">Pedir mi primera clase gratis</button>
+      <button class="btn btn-primary" type="submit">Pedir primera clase gratis</button>
       <small style="color:var(--muted)">Usaré tus datos solo para responderte.</small>
     </form>
   </div>
