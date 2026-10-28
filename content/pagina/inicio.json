@@ -9,7 +9,7 @@
       "titulo": "Clases de canto en Barcelona para que tu voz",
       "tituloDestacado": "suene auténtica",
       "texto": "Más de 17 años ayudando a desbloquear tu potencial vocal y a sacar el máximo partido a tu instrumento.",
-      "botonPrincipal": "Reservar primera clase gratis",
+      "botonPrincipal": "Reservar clase de prueba",
       "botonSecundario": "Ver precios"
     },
     {
@@ -64,22 +64,22 @@
       "antetitulo": "Tarifas",
       "titulo": "Clases individuales, presenciales u online",
       "texto": "Sesiones de una hora en Sants, a 5 minutos andando de la estación, o por videollamada, con el mismo método y el mismo seguimiento.",
-      "aviso": "La primera clase es gratis y sin compromiso",
+      "aviso": "Si quieres empezar con el pack mensual, la primera clase es gratis y sin compromiso",
       "tarifas": [
         {
-          "nombre": "Primera clase",
+          "nombre": "Clase de prueba",
           "destacada": false,
           "etiqueta": "",
           "incluye": [
+            "Para empezar con el pack mensual",
             "Conocemos tu voz y tus objetivos",
-            "Te propongo un plan de trabajo",
-            "Presencial u online"
+            "Te propongo un plan de trabajo"
           ],
           "precio": "Gratis",
           "unidad": "",
           "nota": "Sin compromiso",
-          "boton": "Reservar clase gratis",
-          "opcionFormulario": "Primera clase gratis"
+          "boton": "Reservar clase de prueba",
+          "opcionFormulario": "Clase de prueba (pack mensual)"
         },
         {
           "nombre": "Pack mensual",
@@ -87,6 +87,7 @@
           "etiqueta": "Opción recomendada",
           "incluye": [
             "4 clases al mes, 1 hora semanal",
+            "Primera clase de prueba gratis",
             "Presencial u online",
             "Acceso a los conciertos de alumnos"
           ],
@@ -192,7 +193,7 @@
         },
         {
           "pregunta": "¿Cuánto cuestan las clases de canto?",
-          "respuesta": "La primera clase es gratis. El pack de 4 clases al mes (1 hora semanal) cuesta 120 €, es decir, 30 € por clase. La clase suelta cuesta 40 €."
+          "respuesta": "Si quieres empezar con el pack mensual, la primera clase es gratis y sin compromiso, para que pruebes antes de decidir. El pack de 4 clases al mes (1 hora semanal) cuesta 120 €, es decir, 30 € por clase. La clase suelta cuesta 40 €."
         },
         {
           "pregunta": "¿Dónde son las clases presenciales?",
@@ -215,7 +216,7 @@
     {
       "_template": "contacto",
       "ocultar": false,
-      "antetitulo": "Tu primera clase es gratis",
+      "antetitulo": "Clase de prueba gratis con el pack mensual",
       "titulo": "¿Cantamos?",
       "texto": "Escríbeme por WhatsApp o déjame un mensaje, cuéntame un poco sobre ti y buscamos un hueco. Te respondo en menos de 24 horas.",
       "foto": "/img/inma-sonrisa.jpg",
@@ -227,13 +228,13 @@
     "email": "auladevoz@gmail.com",
     "zona": "Sants (Barcelona), a 5 min de la estación, y online",
     "youtube": "https://www.youtube.com/@auladevoz",
-    "mensajeWhatsApp": "Hola Inma, me gustaría reservar la primera clase gratis",
+    "mensajeWhatsApp": "Hola Inma, me gustaría información sobre las clases de canto",
     "textoPie": "Clases de canto en Sants, Barcelona, y online",
     "claveFormulario": "0a2320b1-7824-4b19-84b4-c4222c29001c"
   },
   "seo": {
     "titulo": "Clases de canto en Barcelona (Sants) y online | Inma Gomes",
-    "descripcion": "Clases de canto personalizadas en Sants (Barcelona) y online con Inma Gomes, vocal coach con Título Superior en Canto Jazz (Liceu) y Estill Voice Training. 17 años de experiencia. Primera clase gratis.",
-    "descripcionRedes": "Clases de canto personalizadas con vocal coach: técnica Estill, confianza escénica y conciertos de alumnos cada tres meses. Primera clase gratis."
+    "descripcion": "Clases de canto personalizadas en Sants (Barcelona) y online con Inma Gomes, vocal coach con Título Superior en Canto Jazz (Liceu) y Estill Voice Training. 17 años de experiencia. Clase de prueba gratis para empezar con el pack mensual.",
+    "descripcionRedes": "Clases de canto personalizadas con vocal coach: técnica Estill, confianza escénica y conciertos de alumnos cada tres meses. Clase de prueba gratis con el pack mensual."
   }
 }

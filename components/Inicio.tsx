@@ -406,7 +406,7 @@ export default function Inicio(props: ContenidoInicio) {
             <li><a href="#conciertos">Conciertos</a></li>
             <li><a href="#opiniones">Opiniones</a></li>
             <li><a href="#preguntas">Preguntas</a></li>
-            <li className="nav-cta"><a className="btn btn-light" href="#contacto">Reservar clase gratis</a></li>
+            <li className="nav-cta"><a className="btn btn-light" href="#contacto">Reservar clase de prueba</a></li>
           </ul>
         </nav>
       </header>
@@ -442,7 +442,7 @@ export default function Inicio(props: ContenidoInicio) {
           </a>
         </div>
         <div className="sticky-cta mobile-bar">
-          <a className="btn btn-primary" href="#contacto">Reservar clase gratis</a>
+          <a className="btn btn-primary" href="#contacto">Reservar clase de prueba</a>
           <a className="btn btn-wa" href={wa} rel="noopener" target="_blank" aria-label="Escribir por WhatsApp (se abre en una pestaña nueva)">
             <IconoWhatsApp size={24} />
           </a>

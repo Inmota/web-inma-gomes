@@ -36,7 +36,7 @@ const bloques: Template[] = [
     parrafo("texto", "Texto"),
     texto("botonPrincipal", "Botón principal"),
     texto("botonSecundario", "Botón secundario"),
-  ], { titulo: "Título de la portada", botonPrincipal: "Reservar primera clase gratis", botonSecundario: "Ver precios" }),
+  ], { titulo: "Título de la portada", botonPrincipal: "Reservar clase de prueba", botonSecundario: "Ver precios" }),
   bloque("lema", "Cita", [parrafo("frase", "Frase"), texto("autora", "Autora")], { autora: "Inma Gomes" }),
   bloque("metodo", "Mi forma de trabajar", [
     ...cabecera,
@@ -65,7 +65,7 @@ const bloques: Template[] = [
       texto("nota", "Nota bajo el precio"),
       texto("boton", "Texto del botón"),
       texto("opcionFormulario", "Opción que se marca en el formulario", {
-        options: ["Primera clase gratis", "Pack mensual", "Clase suelta"],
+        options: ["Clase de prueba (pack mensual)", "Pack mensual", "Clase suelta"],
       } as Partial<TinaField>),
     ]),
   ], { titulo: "Tarifas" }),
