@@ -233,3 +233,21 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   body{padding-bottom:0}
   footer{padding-bottom:110px}
 }
+
+/* Animaciones sutiles (se desactivan con "reducir movimiento") */
+@keyframes hero-zoom{from{transform:scale(1.06)}to{transform:none}}
+@keyframes subir{from{opacity:0;translate:0 18px}to{opacity:1;translate:none}}
+.hero-bg{animation:hero-zoom 2.6s cubic-bezier(.2,.6,.2,1) both}
+.hero-text>*{animation:subir .8s cubic-bezier(.2,.6,.2,1) both}
+.hero-text>:nth-child(2){animation-delay:.12s}
+.hero-text>:nth-child(3){animation-delay:.24s}
+.hero-text>:nth-child(4){animation-delay:.36s}
+.revelar{opacity:0;translate:0 18px;transition:opacity .7s cubic-bezier(.2,.6,.2,1),translate .7s cubic-bezier(.2,.6,.2,1)}
+.revelar.visto{opacity:1;translate:none}
+.gallery img,.community .group{transition:transform .8s cubic-bezier(.2,.6,.2,1)}
+.price-card{transition:box-shadow .3s,border-color .3s}
+@media (hover:hover){
+  .gallery figure:hover img{transform:scale(1.04)}
+  .price-card:hover{box-shadow:0 18px 40px rgba(31,23,20,.12)}
+}
+@media (prefers-reduced-motion:reduce){.revelar{opacity:1;translate:none}.gallery figure:hover img{transform:none}}

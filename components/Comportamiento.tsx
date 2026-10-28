@@ -44,6 +44,32 @@ export default function Comportamiento() {
     window.addEventListener("scroll", update, { passive: true });
     update();
 
+    // Aparición suave al hacer scroll. Solo se ocultan si el navegador puede volver a mostrarlos.
+    let revelar: IntersectionObserver | null = null;
+    if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      revelar = new IntersectionObserver((entradas) => {
+        entradas.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const el = e.target as HTMLElement;
+          el.classList.add("visto");
+          revelar!.unobserve(el);
+          setTimeout(() => { el.style.transitionDelay = ""; }, 1200);
+        });
+      }, { rootMargin: "0px 0px -8% 0px" });
+      const grupos = [
+        ".section-head", ".motto blockquote", ".about-grid > *", ".pillar", ".price-card",
+        ".community > *", ".gallery figure", ".video", ".listen-cta", ".quote",
+        ".faq-grid > *", ".contact-grid > *",
+      ];
+      document.querySelectorAll<HTMLElement>(grupos.join(",")).forEach((el) => {
+        if (el.getBoundingClientRect().top < window.innerHeight) return;
+        const hermanos = Array.from(el.parentElement!.children).filter((h) => h.matches(grupos.join(",")));
+        el.style.transitionDelay = `${(hermanos.indexOf(el) % 4) * 90}ms`;
+        el.classList.add("revelar");
+        revelar!.observe(el);
+      });
+    }
+
     // Los botones de cada precio preseleccionan la opción del formulario
     const interes = document.getElementById("f-interes") as HTMLSelectElement;
     const onDoc = (e: Event) => {
@@ -84,6 +110,7 @@ export default function Comportamiento() {
       form?.removeEventListener("submit", onSubmit);
       form?.removeEventListener("input", onInput);
       observers.forEach((o) => o.disconnect());
+      revelar?.disconnect();
     };
   }, []);
   return null;
