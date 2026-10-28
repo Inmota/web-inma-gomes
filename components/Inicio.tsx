@@ -305,10 +305,12 @@ function Contacto({ b, d, opciones }: BloqueProps) {
             </div>
           </div>
   
-          <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="empresa" action="/gracias.html" noValidate aria-labelledby="form-h">
+          <form name="contacto" method="POST" action="https://api.web3forms.com/submit" noValidate aria-labelledby="form-h">
             <h3 id="form-h" data-tina-field={tinaField(b, "tituloFormulario")}>{b?.tituloFormulario}</h3>
-            <input type="hidden" name="form-name" value="contacto" />
-            <p hidden><label>No rellenar <input name="empresa" tabIndex={-1} autoComplete="off" /></label></p>
+            <input type="hidden" name="access_key" value={d?.claveFormulario || ""} />
+            <input type="hidden" name="subject" value="Nuevo mensaje desde la web" />
+            <input type="hidden" name="from_name" value="Web Aula de Voz Inma Gomes" />
+            <p hidden><label>No rellenar <input type="checkbox" name="botcheck" tabIndex={-1} /></label></p>
             <div className="field">
               <label htmlFor="f-nombre">Nombre</label>
               <input id="f-nombre" name="nombre" required autoComplete="name" aria-describedby="e-nombre" />
@@ -342,6 +344,7 @@ function Contacto({ b, d, opciones }: BloqueProps) {
               <textarea id="f-msg" name="mensaje" rows={4}></textarea>
             </div>
             <button className="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
+            <p className="form-status" role="alert"></p>
             <p className="form-legal">Usaré tus datos solo para responderte. Más información en la <a href="/privacidad.html">política de privacidad</a>.</p>
           </form>
         </div>

@@ -209,6 +209,7 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px soli
 .invalid input,.invalid select,.invalid textarea{border-color:#a3261b}
 .invalid .field-error{display:block}
 .form-legal{font-size:.875rem;color:var(--muted);margin:0}
+.form-status{color:#a3261b;font-weight:500;margin:12px 0 0}.form-status:empty{display:none}
 @media (max-width:600px){form{padding:24px 20px}}
 
 footer{background:var(--night);color:var(--on-dark-2);padding:48px 0 40px;font-size:.95rem}

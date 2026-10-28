@@ -144,6 +144,7 @@ export default defineConfig({
               texto("email", "Email"),
               texto("zona", "Dónde"),
               texto("youtube", "Enlace al canal de YouTube"),
+              texto("claveFormulario", "Clave del formulario (Web3Forms): los mensajes llegan al email de esta clave"),
               texto("mensajeWhatsApp", "Mensaje que se escribe al abrir WhatsApp"),
               texto("textoPie", "Texto del pie de página"),
             ],

@@ -88,7 +88,27 @@ export default function Comportamiento() {
         f.setAttribute("aria-invalid", String(!ok));
         if (!ok && !first) first = f;
       });
-      if (first) { e.preventDefault(); (first as HTMLInputElement).focus(); }
+      if (first) { e.preventDefault(); (first as HTMLInputElement).focus(); return; }
+
+      // Envío sin salir de la página; sin JavaScript el formulario se envía igual
+      e.preventDefault();
+      const boton = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+      const estado = form.querySelector<HTMLElement>(".form-status")!;
+      const textoBoton = boton.textContent;
+      boton.disabled = true;
+      boton.textContent = "Enviando…";
+      estado.textContent = "";
+      fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
+        .then((r) => r.json())
+        .then((r) => {
+          if (!r.success) throw new Error(r.message);
+          window.location.href = "/gracias.html";
+        })
+        .catch(() => {
+          boton.disabled = false;
+          boton.textContent = textoBoton;
+          estado.textContent = "No se ha podido enviar el mensaje. Inténtalo de nuevo o escríbeme por WhatsApp.";
+        });
     };
     const onInput = (e: Event) => {
       const f = e.target as HTMLInputElement;
