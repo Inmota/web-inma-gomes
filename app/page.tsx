@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import Inicio from "@/components/Inicio";
 import { cargarInicio, bloquesDe } from "@/lib/contenido";
 
 const URL = "https://auladevozinmagomes.net/";
+
+// WhatsApp y algunas redes no muestran WebP: para compartir se usa la versión JPG si existe.
+const fotoParaCompartir = (src?: string) => {
+  if (!src) return "";
+  const jpg = src.replace(/\.webp$/, ".jpg");
+  return existsSync(join(process.cwd(), "public", jpg)) ? jpg : src;
+};
 
 export async function generateMetadata(): Promise<Metadata> {
   const { data } = await cargarInicio();
@@ -19,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "Aula de Voz Inma Gomes · Clases de canto en Barcelona y online",
       description: p.seo?.descripcionRedes,
       url: URL,
-      images: portada?.imagen ? [URL + portada.imagen.replace(/^\//, "")] : [],
+      images: portada?.imagen ? [URL + fotoParaCompartir(portada.imagen).replace(/^\//, "")] : [],
     },
   };
 }
@@ -37,7 +46,7 @@ export default async function Page() {
     "@type": "MusicSchool",
     name: "Aula de Voz Inma Gomes",
     url: URL,
-    image: URL + (portada?.imagen || "").replace(/^\//, ""),
+    image: URL + fotoParaCompartir(portada?.imagen).replace(/^\//, ""),
     description: "Clases de canto personalizadas, presenciales en Sants (Barcelona) y online, con Inma Gomes, vocal coach y entrenadora vocal.",
     founder: { "@type": "Person", name: "Inma Gomes", jobTitle: "Vocal coach y entrenadora vocal" },
     telephone: "+34" + (d.telefono || "").replace(/\D/g, ""),

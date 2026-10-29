@@ -34,6 +34,7 @@ const bloques: Template[] = [
     texto("titulo", "Título"),
     texto("tituloDestacado", "Final del título (en dorado)"),
     parrafo("texto", "Texto"),
+    texto("credenciales", "Formación destacada (línea pequeña bajo el texto)"),
     texto("botonPrincipal", "Botón principal"),
     texto("botonSecundario", "Botón secundario"),
   ], { titulo: "Título de la portada", botonPrincipal: "Reservar clase de prueba", botonSecundario: "Ver precios" }),

@@ -1,6 +1,7 @@
 "use client";
 
 import type React from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTina, tinaField } from "tinacms/dist/react";
 import type { ContenidoInicio } from "@/lib/contenido";
 import { enlaceWhatsApp, idYouTube } from "@/lib/util";
@@ -36,6 +37,7 @@ function Portada({ b, d, opciones }: BloqueProps) {
               <em data-tina-field={tinaField(b, "tituloDestacado")}>{b?.tituloDestacado}</em>
             </h1>
             <p className="lead" data-tina-field={tinaField(b, "texto")}>{b?.texto}</p>
+            {b?.credenciales && <p className="hero-creds" data-tina-field={tinaField(b, "credenciales")}>{b.credenciales}</p>}
             <div className="hero-ctas">
               <a className="btn btn-light" href="#contacto" data-tina-field={tinaField(b, "botonPrincipal")}>{b?.botonPrincipal}</a>
               <a className="btn btn-outline" href="#precios" data-tina-field={tinaField(b, "botonSecundario")}>{b?.botonSecundario}</a>
@@ -192,14 +194,7 @@ function Musica({ b, d, opciones }: BloqueProps) {
           </div>
           {video && (
             <div className="video" data-tina-field={tinaField(b, "video")}>
-              <iframe
-                src={`https://www.youtube-nocookie.com/embed/${video}?rel=0`}
-                title="Vídeo de Inma Gomes cantando"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+              <VideoYouTube id={video} />
             </div>
           )}
           {d?.youtube && (
@@ -218,6 +213,60 @@ function Musica({ b, d, opciones }: BloqueProps) {
   );
 }
 
+// Carga YouTube solo al pulsar: la página pesa menos y no hay cookies hasta entonces.
+function VideoYouTube({ id }: { id: string }) {
+  const [activo, setActivo] = useState(false);
+  const marco = useRef<HTMLIFrameElement>(null);
+  useEffect(() => { if (activo) marco.current?.focus(); }, [activo]);
+  if (activo)
+    return (
+      <iframe
+        ref={marco}
+        src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&autoplay=1`}
+        title="Vídeo de Inma Gomes cantando"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    );
+  return (
+    <button type="button" className="video-play" onClick={() => setActivo(true)}>
+      <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" onError={(e) => { e.currentTarget.hidden = true; }} />
+      <span className="video-icon" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+      </span>
+      <span className="sr-only">Reproducir vídeo de Inma Gomes cantando</span>
+    </button>
+  );
+}
+
+// En móvil las opiniones largas se cortan a 5 líneas con un botón para leerlas enteras.
+function Opinion({ o, i }: { o: any; i: number }) {
+  const texto = useRef<HTMLParagraphElement>(null);
+  const [larga, setLarga] = useState(false);
+  const [abierta, setAbierta] = useState(false);
+  useEffect(() => {
+    const p = texto.current;
+    if (!p) return;
+    const medir = () => { if (!p.closest(".abierta")) setLarga(p.scrollHeight > p.clientHeight + 2); };
+    medir();
+    const ro = new ResizeObserver(medir);
+    ro.observe(p);
+    return () => ro.disconnect();
+  }, [o?.texto]);
+  return (
+    <figure className={"quote" + (abierta ? " abierta" : "")} data-tina-field={tinaField(o)}>
+      <blockquote><p id={`opinion-${i}`} ref={texto} data-tina-field={tinaField(o, "texto")}>{o?.texto}</p></blockquote>
+      {(larga || abierta) && (
+        <button type="button" className="leer-mas" aria-expanded={abierta} aria-controls={`opinion-${i}`} onClick={() => setAbierta(!abierta)}>
+          {abierta ? "Leer menos" : "Leer más"}
+        </button>
+      )}
+      <figcaption data-tina-field={tinaField(o, "nombre")}>{o?.nombre}</figcaption>
+    </figure>
+  );
+}
+
 function Opiniones({ b, d, opciones }: BloqueProps) {
   return (
       <section className="testimonials" id="opiniones" aria-labelledby="opiniones-h">
@@ -228,10 +277,7 @@ function Opiniones({ b, d, opciones }: BloqueProps) {
           </div>
           <div className="grid-3">
             {(b?.lista || []).map((o: any, i: number) => (
-              <figure className="quote" key={i} data-tina-field={tinaField(o)}>
-                <blockquote><p data-tina-field={tinaField(o, "texto")}>{o?.texto}</p></blockquote>
-                <figcaption data-tina-field={tinaField(o, "nombre")}>{o?.nombre}</figcaption>
-              </figure>
+              <Opinion o={o} i={i} key={i} />
             ))}
           </div>
         </div>
