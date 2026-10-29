@@ -429,6 +429,7 @@ export default function Inicio(props: ContenidoInicio) {
             <li><a href={enlaceWhatsApp(tel)} rel="noopener" target="_blank">WhatsApp{NUEVA}</a></li>
             <li><a href={`mailto:${d?.email}`}>Email</a></li>
             <li><a href="/privacidad.html">Privacidad</a></li>
+            <li><a href="/aviso-legal">Aviso legal</a></li>
           </ul>
           <p>© {new Date().getFullYear()} Inma Gomes</p>
         </div>

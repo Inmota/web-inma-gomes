@@ -147,6 +147,10 @@ export default defineConfig({
               texto("claveFormulario", "Clave del formulario (Web3Forms): los mensajes llegan al email de esta clave"),
               texto("mensajeWhatsApp", "Mensaje que se escribe al abrir WhatsApp"),
               texto("textoPie", "Texto del pie de página"),
+              texto("titular", "Aviso legal: nombre y apellidos completos"),
+              texto("nif", "Aviso legal: NIF"),
+              texto("direccion", "Aviso legal: dirección postal"),
+              texto("notaImpuestos", "Aviso legal: nota sobre impuestos (por ejemplo: Las clases están exentas de IVA.)"),
             ],
           },
           {
