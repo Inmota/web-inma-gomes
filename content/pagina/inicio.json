@@ -62,8 +62,8 @@
     {
       "ocultar": false,
       "antetitulo": "Tarifas",
-      "titulo": "Clases individuales, presenciales u online",
-      "texto": "Sesiones de una hora en Sants, a 5 minutos andando de la estación, o por videollamada, con el mismo método y el mismo seguimiento.",
+      "titulo": "Clases individuales",
+      "texto": "Sesiones de una hora en Sants, a 5 minutos andando de la estación. Si vives fuera o un día no puedes venir, también por videollamada, con el mismo método y el mismo seguimiento.",
       "aviso": "Si quieres empezar con el pack mensual, la primera clase es gratis y sin compromiso",
       "tarifas": [
         {
