@@ -228,7 +228,8 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 /* Acción fija: WhatsApp en escritorio, barra de reserva en móvil */
 .sticky-cta{position:fixed;z-index:30;transition:transform .25s,opacity .25s;opacity:0;pointer-events:none}
 .sticky-cta.show{opacity:1;pointer-events:auto}
-.wa-float{right:20px;bottom:20px;transform:translateY(12px)}
+/* A la izquierda: abajo a la derecha está el sello de Netlify */
+.wa-float{left:20px;bottom:20px;transform:translateY(12px)}
 .wa-float.show{transform:none}
 .wa-float a{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 20px 0 16px;border-radius:999px;background:var(--wa);color:var(--white);font-weight:600;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .mobile-bar{display:none}
