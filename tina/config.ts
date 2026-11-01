@@ -76,11 +76,11 @@ const bloques: Template[] = [
     lista("galeria", "Galería de fotos", "textoAlternativo", [
       foto("imagen", "Foto"),
       texto("textoAlternativo", "Descripción de la foto (accesibilidad)"),
-      texto("formato", "Tamaño en la galería", {
+      texto("formato", "¿Destacar? (la cuadrícula se ajusta sola; las destacadas salen más anchas)", {
         options: [
-          { value: "normal", label: "Normal" },
-          { value: "alta", label: "Alta (vertical)" },
-          { value: "ancha", label: "Ancha (horizontal)" },
+          { value: "normal", label: "No" },
+          { value: "ancha", label: "Sí, destacar" },
+          { value: "alta", label: "Sí, destacar (vertical)" },
         ],
       } as Partial<TinaField>),
     ]),
