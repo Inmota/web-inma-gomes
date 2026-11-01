@@ -15,11 +15,11 @@ const IconoWhatsApp = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
-type BloqueProps = { b: any; d: any; opciones: string[] };
+type BloqueProps = { b: any; d: any };
 
 const formatoGaleria: Record<string, string | undefined> = { alta: "tall", ancha: "wide" };
 
-function Portada({ b, d, opciones }: BloqueProps) {
+function Portada({ b, d }: BloqueProps) {
   return (
       <section className="hero" id="inicio" aria-labelledby="hero-h">
         <img
@@ -48,7 +48,7 @@ function Portada({ b, d, opciones }: BloqueProps) {
   );
 }
 
-function Lema({ b, d, opciones }: BloqueProps) {
+function Lema({ b, d }: BloqueProps) {
   return (
       <section className="motto" aria-label="Lema de Inma">
         <div className="wrap">
@@ -61,7 +61,7 @@ function Lema({ b, d, opciones }: BloqueProps) {
   );
 }
 
-function Metodo({ b, d, opciones }: BloqueProps) {
+function Metodo({ b, d }: BloqueProps) {
   return (
       <section className="benefits" aria-labelledby="beneficios-h">
         <div className="wrap">
@@ -84,7 +84,7 @@ function Metodo({ b, d, opciones }: BloqueProps) {
   );
 }
 
-function SobreMi({ b, d, opciones }: BloqueProps) {
+function SobreMi({ b, d }: BloqueProps) {
   return (
       <section className="about" id="sobre-mi" aria-labelledby="sobre-mi-h">
         <div className="wrap about-grid">
@@ -105,7 +105,7 @@ function SobreMi({ b, d, opciones }: BloqueProps) {
   );
 }
 
-function Precios({ b, d, opciones }: BloqueProps) {
+function Precios({ b, d }: BloqueProps) {
   return (
       <section className="prices" id="precios" aria-labelledby="precios-h">
         <div className="wrap">
@@ -136,7 +136,6 @@ function Precios({ b, d, opciones }: BloqueProps) {
                 <a
                   className={"btn btn-block " + (t?.destacada ? "btn-light" : "btn-outline")}
                   href="#contacto"
-                  data-interes={t?.opcionFormulario || undefined}
                   data-tina-field={tinaField(t, "boton")}
                 >
                   {t?.boton}
@@ -149,7 +148,7 @@ function Precios({ b, d, opciones }: BloqueProps) {
   );
 }
 
-function Conciertos({ b, d, opciones }: BloqueProps) {
+function Conciertos({ b, d }: BloqueProps) {
   return (
       <section className="concerts" id="conciertos" aria-labelledby="conciertos-h">
         <div className="wrap">
@@ -182,7 +181,7 @@ function Conciertos({ b, d, opciones }: BloqueProps) {
   );
 }
 
-function Musica({ b, d, opciones }: BloqueProps) {
+function Musica({ b, d }: BloqueProps) {
   const video = idYouTube(b?.video);
   return (
       <section className="listen dark" id="escuchar" aria-labelledby="escuchar-h">
@@ -267,7 +266,7 @@ function Opinion({ o, i }: { o: any; i: number }) {
   );
 }
 
-function Opiniones({ b, d, opciones }: BloqueProps) {
+function Opiniones({ b, d }: BloqueProps) {
   return (
       <section className="testimonials" id="opiniones" aria-labelledby="opiniones-h">
         <div className="wrap">
@@ -285,7 +284,7 @@ function Opiniones({ b, d, opciones }: BloqueProps) {
   );
 }
 
-function Preguntas({ b, d, opciones }: BloqueProps) {
+function Preguntas({ b, d }: BloqueProps) {
   return (
       <section className="faq" id="preguntas" aria-labelledby="faq-h">
         <div className="wrap faq-grid">
@@ -309,7 +308,7 @@ function Preguntas({ b, d, opciones }: BloqueProps) {
   );
 }
 
-function Contacto({ b, d, opciones }: BloqueProps) {
+function Contacto({ b, d }: BloqueProps) {
   const tel = d?.telefono || "";
   const telHref = "tel:+34" + tel.replace(/\D/g, "");
   const wa = enlaceWhatsApp(tel, d?.mensajeWhatsApp);
@@ -320,10 +319,13 @@ function Contacto({ b, d, opciones }: BloqueProps) {
             <p className="eyebrow" data-tina-field={tinaField(b, "antetitulo")}>{b?.antetitulo}</p>
             <h2 id="contacto-h" data-tina-field={tinaField(b, "titulo")}>{b?.titulo}</h2>
             <p className="lead" data-tina-field={tinaField(b, "texto")}>{b?.texto}</p>
-            <a className="btn btn-wa" href={wa} rel="noopener" target="_blank">
-              <IconoWhatsApp />
-              Escribir por WhatsApp{NUEVA}
-            </a>
+            <div className="contact-ctas">
+              <a className="btn btn-wa" href={wa} rel="noopener" target="_blank">
+                <IconoWhatsApp />
+                Escribir por WhatsApp{NUEVA}
+              </a>
+              {d?.email && <a className="btn btn-outline" href={`mailto:${d.email}`}>Enviar un email</a>}
+            </div>
             <ul className="contact-list">
               <li>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" /><circle cx="12" cy="10" r="2.5" /></svg>
@@ -346,53 +348,10 @@ function Contacto({ b, d, opciones }: BloqueProps) {
                 </li>
               )}
             </ul>
-            <div className="contact-photo" data-tina-field={tinaField(b, "foto")}>
-              <img src={b?.foto} alt="" loading="lazy" />
-            </div>
           </div>
-  
-          <form name="contacto" method="POST" action="https://api.web3forms.com/submit" noValidate aria-labelledby="form-h">
-            <h3 id="form-h" data-tina-field={tinaField(b, "tituloFormulario")}>{b?.tituloFormulario}</h3>
-            <input type="hidden" name="access_key" value={d?.claveFormulario || ""} />
-            <input type="hidden" name="subject" value="Nuevo mensaje desde la web" />
-            <input type="hidden" name="from_name" value="Web Aula de Voz Inma Gomes" />
-            <p hidden><label>No rellenar <input type="checkbox" name="botcheck" tabIndex={-1} /></label></p>
-            <div className="field">
-              <label htmlFor="f-nombre">Nombre</label>
-              <input id="f-nombre" name="nombre" required autoComplete="name" aria-describedby="e-nombre" />
-              <span className="field-error" id="e-nombre">Escribe tu nombre.</span>
-            </div>
-            <div className="field">
-              <label htmlFor="f-email">Email</label>
-              <input id="f-email" type="email" name="email" required autoComplete="email" inputMode="email" aria-describedby="e-email" />
-              <span className="field-error" id="e-email">Escribe un email válido, por ejemplo nombre@gmail.com.</span>
-            </div>
-            <div className="field">
-              <label htmlFor="f-tel">Teléfono <span className="opt">(opcional)</span></label>
-              <input id="f-tel" type="tel" name="telefono" autoComplete="tel" inputMode="tel" />
-            </div>
-            <div className="field">
-              <label htmlFor="f-interes">Me interesa</label>
-              <select id="f-interes" name="interes">
-                {opciones.map((o) => <option key={o}>{o}</option>)}
-              </select>
-            </div>
-            <div className="field">
-              <label htmlFor="f-modalidad">Modalidad</label>
-              <select id="f-modalidad" name="modalidad">
-                <option>Presencial en Sants</option>
-                <option>Online</option>
-                <option>Aún no lo sé</option>
-              </select>
-            </div>
-            <div className="field">
-              <label htmlFor="f-msg">Cuéntame tu experiencia y qué quieres conseguir <span className="opt">(opcional)</span></label>
-              <textarea id="f-msg" name="mensaje" rows={4}></textarea>
-            </div>
-            <button className="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
-            <p className="form-status" role="alert"></p>
-            <p className="form-legal">Usaré tus datos solo para responderte. Más información en la <a href="/privacidad.html">política de privacidad</a>.</p>
-          </form>
+          <div className="contact-photo" data-tina-field={tinaField(b, "foto")}>
+            <img src={b?.foto} alt="" loading="lazy" />
+          </div>
         </div>
       </section>
   );
@@ -426,14 +385,6 @@ export default function Inicio(props: ContenidoInicio) {
 
   const tel = d?.telefono || "";
   const wa = enlaceWhatsApp(tel, d?.mensajeWhatsApp);
-  const opciones = Array.from(
-    new Set(
-      bloques
-        .filter((b: any) => tipoBloque(b) === "precios")
-        .flatMap((b: any) => (b.tarifas || []).map((t: any) => t?.opcionFormulario))
-        .filter(Boolean)
-    )
-  ) as string[];
 
   return (
     <>
@@ -460,7 +411,7 @@ export default function Inicio(props: ContenidoInicio) {
       <main id="main">
         {bloques.map((b: any, i: number) => {
           const Bloque = COMPONENTES[tipoBloque(b)];
-          return Bloque ? <Bloque key={i} b={b} d={d} opciones={opciones} /> : null;
+          return Bloque ? <Bloque key={i} b={b} d={d} /> : null;
         })}
       </main>
 

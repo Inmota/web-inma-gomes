@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-// Menú móvil, cabecera sólida, botones fijos, preselección del formulario y validación accesible.
+// Menú móvil, cabecera sólida, botones fijos y aparición suave al hacer scroll.
 export default function Comportamiento() {
   useEffect(() => {
     const header = document.getElementById("top")!;
@@ -70,65 +70,12 @@ export default function Comportamiento() {
       });
     }
 
-    // Los botones de cada precio preseleccionan la opción del formulario
-    const interes = document.getElementById("f-interes") as HTMLSelectElement;
-    const onDoc = (e: Event) => {
-      const a = (e.target as Element).closest<HTMLElement>("[data-interes]");
-      if (a && interes) interes.value = a.dataset.interes!;
-    };
-    document.addEventListener("click", onDoc);
-
-    // Validación accesible del formulario
-    const form = document.querySelector<HTMLFormElement>('form[name="contacto"]');
-    const onSubmit = (e: Event) => {
-      let first: HTMLInputElement | null = null;
-      form.querySelectorAll<HTMLInputElement>("[required]").forEach((f) => {
-        const ok = f.checkValidity();
-        f.closest(".field")!.classList.toggle("invalid", !ok);
-        f.setAttribute("aria-invalid", String(!ok));
-        if (!ok && !first) first = f;
-      });
-      if (first) { e.preventDefault(); (first as HTMLInputElement).focus(); return; }
-
-      // Envío sin salir de la página; sin JavaScript el formulario se envía igual
-      e.preventDefault();
-      const boton = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
-      const estado = form.querySelector<HTMLElement>(".form-status")!;
-      const textoBoton = boton.textContent;
-      boton.disabled = true;
-      boton.textContent = "Enviando…";
-      estado.textContent = "";
-      fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
-        .then((r) => r.json())
-        .then((r) => {
-          if (!r.success) throw new Error(r.message);
-          window.location.href = "/gracias.html";
-        })
-        .catch(() => {
-          boton.disabled = false;
-          boton.textContent = textoBoton;
-          estado.textContent = "No se ha podido enviar el mensaje. Inténtalo de nuevo o escríbeme por WhatsApp.";
-        });
-    };
-    const onInput = (e: Event) => {
-      const f = e.target as HTMLInputElement;
-      const field = f.closest(".field");
-      if (f.required && field?.classList.contains("invalid") && f.checkValidity()) {
-        field.classList.remove("invalid");
-        f.setAttribute("aria-invalid", "false");
-      }
-    };
-    form?.addEventListener("submit", onSubmit);
-    form?.addEventListener("input", onInput);
 
     return () => {
       btn.removeEventListener("click", onBtn);
       links.removeEventListener("click", onLinks);
       document.removeEventListener("keydown", onKey);
       window.removeEventListener("scroll", update);
-      document.removeEventListener("click", onDoc);
-      form?.removeEventListener("submit", onSubmit);
-      form?.removeEventListener("input", onInput);
       observers.forEach((o) => o.disconnect());
       revelar?.disconnect();
     };

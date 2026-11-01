@@ -35,7 +35,7 @@ export default async function AvisoLegal() {
       <p>La información de esta web puede actualizarse sin previo aviso. Los enlaces a otras webs, como YouTube o WhatsApp, se ofrecen por comodidad; su contenido es responsabilidad de esas webs.</p>
 
       <h2>Datos personales</h2>
-      <p>Cómo se tratan los datos que envías por el formulario se explica en la <a href="/privacidad.html">política de privacidad</a>.</p>
+      <p>Cómo se tratan los datos que me envías por WhatsApp o email se explica en la <a href="/privacidad.html">política de privacidad</a>.</p>
 
       <h2>Legislación aplicable</h2>
       <p>Esta web se rige por la legislación española.</p>

@@ -78,8 +78,7 @@
           "precio": "Gratis",
           "unidad": "",
           "nota": "Sin compromiso",
-          "boton": "Reservar clase de prueba",
-          "opcionFormulario": "Clase de prueba (pack mensual)"
+          "boton": "Reservar clase de prueba"
         },
         {
           "nombre": "Pack mensual",
@@ -94,8 +93,7 @@
           "precio": "120 €",
           "unidad": "al mes",
           "nota": "Equivale a 30 € por clase",
-          "boton": "Empezar con el pack",
-          "opcionFormulario": "Pack mensual"
+          "boton": "Empezar con el pack"
         },
         {
           "nombre": "Clase suelta",
@@ -109,8 +107,7 @@
           "precio": "40 €",
           "unidad": "la clase",
           "nota": "",
-          "boton": "Reservar una clase",
-          "opcionFormulario": "Clase suelta"
+          "boton": "Reservar una clase"
         }
       ],
       "_template": "precios"
@@ -234,9 +231,8 @@
       "ocultar": false,
       "antetitulo": "Hablemos",
       "titulo": "¿Cantamos?",
-      "texto": "Escríbeme por WhatsApp o déjame un mensaje, cuéntame un poco sobre ti y buscamos un hueco. Te respondo en menos de 24 horas.",
+      "texto": "Escríbeme por WhatsApp o por email, cuéntame un poco sobre ti y buscamos un hueco. Te respondo en menos de 24 horas.",
       "foto": "/img/inma-sonrisa.webp",
-      "tituloFormulario": "Déjame un mensaje",
       "_template": "contacto"
     }
   ],
@@ -245,7 +241,6 @@
     "email": "auladevoz@gmail.com",
     "zona": "Sants (Barcelona), a 5 min de la estación, y online",
     "youtube": "https://www.youtube.com/@auladevoz",
-    "claveFormulario": "0a2320b1-7824-4b19-84b4-c4222c29001c",
     "mensajeWhatsApp": "Hola Inma, me gustaría información sobre las clases de canto",
     "textoPie": "Clases de canto en Sants, Barcelona, y online",
     "titular": "Inma Gomes",
