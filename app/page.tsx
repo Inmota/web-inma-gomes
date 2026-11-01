@@ -56,6 +56,14 @@ export default async function Page() {
     sameAs: d.youtube ? [d.youtube] : [],
     makesOffer: tarifas.map((t: any) => ({ "@type": "Offer", name: t.nombre, price: importe(t), priceCurrency: "EUR" })),
   };
+  // Nombre del sitio que Google muestra encima de la dirección en los resultados
+  const sitio = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Aula de Voz Inma Gomes",
+    alternateName: ["Inma Gomes", "Aula de Voz"],
+    url: URL,
+  };
   const faq = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -67,6 +75,7 @@ export default async function Page() {
   };
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitio) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(escuela) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
       <Inicio {...contenido} />
