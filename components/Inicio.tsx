@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTina, tinaField } from "tinacms/dist/react";
 import type { ContenidoInicio } from "@/lib/contenido";
 import { enlaceWhatsApp, idYouTube } from "@/lib/util";
+import { columnasGaleria } from "@/lib/galeria";
 import Comportamiento from "./Comportamiento";
 
 const NUEVA = <span className="sr-only"> (se abre en una pestaña nueva)</span>;
@@ -16,8 +17,6 @@ const IconoWhatsApp = ({ size = 20 }: { size?: number }) => (
 );
 
 type BloqueProps = { b: any; d: any };
-
-const formatoGaleria: Record<string, string | undefined> = { alta: "tall", ancha: "wide" };
 
 function Portada({ b, d }: BloqueProps) {
   return (
@@ -171,11 +170,15 @@ function Conciertos({ b, d }: BloqueProps) {
           </div>
         </div>
         <div className="gallery">
-          {(b?.galeria || []).map((g: any, i: number) => (
-            <figure className={formatoGaleria[g?.formato]} key={i} data-tina-field={tinaField(g)}>
+          {(() => {
+            const fotos = (b?.galeria || []).filter((g: any) => g?.imagen);
+            const cols = columnasGaleria(fotos);
+            return fotos.map((g: any, i: number) => (
+            <figure key={i} style={{ "--d": cols[i].d, "--m": cols[i].m } as React.CSSProperties} data-tina-field={tinaField(g)}>
               <img src={g?.imagen} alt={g?.textoAlternativo || ""} loading="lazy" />
             </figure>
-          ))}
+            ));
+          })()}
         </div>
       </section>
   );
