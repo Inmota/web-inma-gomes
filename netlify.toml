@@ -4,8 +4,3 @@
 
 [build.environment]
   NODE_VERSION = "22"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "noindex"

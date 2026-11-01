@@ -5,8 +5,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es">
       <head>
-        {/* Web de PRUEBA: noindex para que no compita con la web real. Quitar al publicar en el dominio definitivo. */}
-        <meta name="robots" content="noindex, nofollow" />
         <meta name="theme-color" content="#1f1714" />
         <link
           rel="icon"

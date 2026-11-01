@@ -4,7 +4,7 @@ import { join } from "node:path";
 import Inicio from "@/components/Inicio";
 import { cargarInicio, bloquesDe } from "@/lib/contenido";
 
-const URL = "https://auladevozinmagomes.net/";
+const URL = "https://auladevozinmagomes.com/";
 
 // WhatsApp y algunas redes no muestran WebP: para compartir se usa la versión JPG si existe.
 const fotoParaCompartir = (src?: string) => {

@@ -1,3 +1,4 @@
-# Web de prueba: no indexar
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://auladevozinmagomes.com/sitemap.xml
