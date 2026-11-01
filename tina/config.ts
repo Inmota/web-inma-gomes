@@ -65,9 +65,6 @@ const bloques: Template[] = [
       texto("unidad", "Unidad (por ejemplo: al mes)"),
       texto("nota", "Nota bajo el precio"),
       texto("boton", "Texto del botón"),
-      texto("opcionFormulario", "Opción que se marca en el formulario", {
-        options: ["Clase de prueba (pack mensual)", "Pack mensual", "Clase suelta"],
-      } as Partial<TinaField>),
     ]),
   ], { titulo: "Tarifas" }),
   bloque("conciertos", "Conciertos", [
@@ -103,12 +100,11 @@ const bloques: Template[] = [
     ...cabecera,
     lista("lista", "Preguntas", "pregunta", [texto("pregunta", "Pregunta"), parrafo("respuesta", "Respuesta")]),
   ], { titulo: "Antes de empezar" }),
-  bloque("contacto", "Contacto y formulario", [
+  bloque("contacto", "Contacto", [
     ...cabecera,
     parrafo("texto", "Texto"),
     foto("foto", "Foto"),
-    texto("tituloFormulario", "Título del formulario"),
-  ], { titulo: "¿Cantamos?", tituloFormulario: "Déjame un mensaje" }),
+  ], { titulo: "¿Cantamos?" }),
 ];
 
 export default defineConfig({
@@ -145,7 +141,6 @@ export default defineConfig({
               texto("email", "Email"),
               texto("zona", "Dónde"),
               texto("youtube", "Enlace al canal de YouTube"),
-              texto("claveFormulario", "Clave del formulario (Web3Forms): los mensajes llegan al email de esta clave"),
               texto("mensajeWhatsApp", "Mensaje que se escribe al abrir WhatsApp"),
               texto("textoPie", "Texto del pie de página"),
               texto("titular", "Aviso legal: nombre y apellidos completos"),
